@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Clean DB" type="DatabaseScript">
+    <script-file value="$PROJECT_DIR$/clean_db.sql" />
+    <script-mode>FILE</script-mode>
+    <data-source id="a2fe2cdf-ced7-4d41-9e64-e1d759f48308" namespace="schema/&quot;jdbc-sandbox&quot;" />
+    <method v="2" />
+  </configuration>
+</component>
