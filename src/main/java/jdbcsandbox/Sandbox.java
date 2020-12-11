@@ -23,11 +23,14 @@ public class Sandbox implements AutoCloseable {
     connection = connect();
   }
 
-  public void nicolas () throws SQLException {
+  public void nicolasTemp() throws SQLException {
     Statement statement = newStatement();
-        try(ResultSet resultSet = statement.executeQuery(""
-                                                         + "")) {
-          System.out.println("yo");
+        try(ResultSet resultSet = statement.executeQuery(
+            "select reviews.id, book_id, username, rating, b.title "
+            + "from reviews "
+            + " join books b on b.id = reviews.book_id;")) {
+          resultSet.next();
+          System.out.println("debug here");
         }
   }
 

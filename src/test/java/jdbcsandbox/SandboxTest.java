@@ -20,7 +20,7 @@ class SandboxTest {
 
       Book mobyDick = sandbox.getBookWithTitle("Moby Dick");
       System.out.println("mobyDick = " + mobyDick);
-      sandbox.nicolas();
+      sandbox.nicolasTemp();
     }
   }
 
